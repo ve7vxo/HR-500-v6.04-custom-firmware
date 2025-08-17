@@ -82,7 +82,7 @@ byte curSenseMSB, curSenseLSB;
 //===============================================================================================================
 // Returns the power from V x I internal LTC based on 5 milliohm shunt
 
-unsigned long Read_Power(void){                                            
+unsigned long Read_DCPwr(void){                                            
 byte pwrSenseUSB, pwrSenseMSB, pwrSenseLSB;
   Wire.beginTransmission(LTCADDR);                                                    // Get sense power
   Wire.write(0x5);                                                                    // Power sense register address
