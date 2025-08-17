@@ -1,4 +1,4 @@
-# HR-500-v6.02-custom-firmware
+# HR-500-v6.04-custom-firmware
 Control firmware for HR-500 RF amplifier
 
 ** Disclaimer: This is experimental code. Use at your own risk. The author of this code assumes no liability for its use.**
