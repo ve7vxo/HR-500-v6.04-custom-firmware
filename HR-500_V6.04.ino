@@ -783,6 +783,8 @@ void loop()
             Tft.LCD_SEL = 0;
             DrawPanel(63, 146, 80, 30);                                           // Initialize DC power display window
             Tft.drawString("W", 118, 153, 2, ACT_TXT);
+            DrawPanel(230, 146, 80, 30);                                          // Initialize efficiency display window
+            Tft.drawString("%", 280, 153, 2, ACT_TXT);
             F_alert = 1; R_alert = 1; D_alert = 1; V_alert = 1; I_alert = 1;
             OF_alert = 0; OR_alert = 0; OD_alert = 0; OV_alert = 0; OI_alert = 0;
             Switch_to_RX ();
