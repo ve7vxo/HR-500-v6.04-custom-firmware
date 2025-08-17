@@ -688,7 +688,7 @@ void loop()
       Tft.drawString(ODC_TXT, 75, 153, 2, BG_col);                            // Erase stale DC power text
       Tft.drawString(OEF_TXT, 248, 153, 2, BG_col);                           
       if(TX_time.hasPassed(1000)){                                            // Wait for sustained power before display
-        long dc_pwr = Read_Power();
+        long dc_pwr = Read_DCPwr();
         if(dc_pwr > fwd_pk){
           long amp_eff = (fwd_pk * 100) / dc_pwr;
           ltoa(dc_pwr,DC_TXT,10);
